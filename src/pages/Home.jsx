@@ -1,5 +1,6 @@
 import circularLogo from '../Assets/Images/CircularLogo.png'
 import '../Assets/Styles/Home.css'
+import ServicesSlider from '../Components/Home/ServicesSlider'
 
 function Home() {
   return (
@@ -12,9 +13,10 @@ function Home() {
           </div>
           <h1>Vitality & Glow</h1>
           <p>Terapías profesionales diseñadas para reconciliar tu cuerpo con tu mente.</p>
-          <a href="/booking" className='hero-btn'>Reserva tu sesión</a>
+          <a href="/booking" className='hero-btn'>Agendar</a>
         </div>
       </section>
+      <ServicesSlider />
     </div>
   )
 }

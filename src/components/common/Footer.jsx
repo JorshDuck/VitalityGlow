@@ -23,7 +23,7 @@ function Footer () {
         <div className='footer-column'>
           <h3>Contáctanos</h3>
           <p>Calle Huanchaca #</p>
-          <p>(+591) 74 94 60 21</p>
+          <p>(+591) 74946021</p>
           <p>Whatsapp</p>
         </div>
         {/* Column 4 */}
