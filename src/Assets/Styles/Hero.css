@@ -1,5 +1,5 @@
 .hero {
-  height: 90vh;
+  height: 100vh;
   background-image: url('../Images/Hero.jpg');
   background-size: cover;
   background-position: center;
@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 80;
 }
 
 .hero-overlay {
@@ -76,13 +77,13 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.9rem;
   }
   
   .hero-content p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }

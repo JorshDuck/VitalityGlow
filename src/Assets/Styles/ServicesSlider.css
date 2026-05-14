@@ -1,15 +1,16 @@
-.services-slider {
+.services-container {
   padding: 5rem 2rem;
   background: #f9f8f4;
   text-align: center;
 }
 
-.services-slider h2 {
+.services-container h2 {
   font-size: 2.2rem;
   color: #2C3E50;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
+/* Filters */
 .filters {
   display: flex;
   justify-content: center;
@@ -30,7 +31,8 @@
 }
 
 .filter-btn:hover {
-  background: #E8D5C4;
+  background: #6B8E7B;
+  color: white;
 }
 
 .filter-btn.active {
@@ -46,13 +48,6 @@
   gap: 1rem;
   max-width: 1350px;
   margin: 0 auto;
-}
-
-.cards-wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  width: 100%;
 }
 
 .slider-btn {
@@ -74,11 +69,18 @@
 }
 
 .slider-btn:disabled {
-  opacity: 0.3;
+  opacity: 0.20;
   cursor: not-allowed;
 }
 
 /* Cards */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+
 .service-card {
   background: white;
   border-radius: 15px;
@@ -139,4 +141,61 @@
   font-weight: 700;
   color: #6B8E7B;
   font-size: 1.2rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .services-container {
+    padding: 3rem 1rem;
+  }
+
+  .services-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .filters {
+    gap: 0.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .filter-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .service-card {
+    display: none;
+  }
+
+  .service-card:first-child {
+    display: block;
+  }
+
+  .slider-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .card-image {
+    height: 180px;
+  }
+
+  .card-info {
+    padding: 1.2rem;
+  }
+
+  .card-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .card-info p {
+    font-size: 0.85rem;
+  }
 }

@@ -11,7 +11,9 @@ function ServicesSlider() {
   ? services
   : services.filter(s => s.tag === activeTag)
 
-  const visibleServices = filteredServices.slice(start, start + 4)
+  const cardsPerView = window.innerWidth <= 768 ? 1 : 4
+  const visibleServices = filteredServices.slice(start, start + cardsPerView)
+
   const tags = [
     { id: 'all', name: 'Todos' },
     { id: 'limpieza', name: 'Limpiezas' },
@@ -21,7 +23,7 @@ function ServicesSlider() {
   ]
 
   const next = () => {
-    if (start + 4 < filteredServices.length) {
+    if (start + cardsPerView < filteredServices.length) {
       setStart(start + 1)
     }
   }
@@ -38,7 +40,7 @@ function ServicesSlider() {
   }
 
   return (
-    <section className='services-slider'>
+    <section className='services-container'>
       <h2>Nuestros Servicios</h2>
 
       {/* Filters */}
@@ -64,7 +66,7 @@ function ServicesSlider() {
           ←
         </button>
 
-        <div className='cards-wrapper'>
+        <div className='cards-container'>
           {visibleServices.map(service => (
             <div key={service.id} className='service-card'>
               <div className='card-image'>
@@ -86,7 +88,7 @@ function ServicesSlider() {
         <button
         className='slider-btn next'
         onClick={next}
-        disabled={start + 4 >= filteredServices.length}
+        disabled={start + cardsPerView >= filteredServices.length}
         >
           →
         </button>

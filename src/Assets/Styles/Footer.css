@@ -15,11 +15,11 @@
 .footer-column {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 0.5rem;
 }
 
 .footer-column h3 {
-  color: #A8D8B9;
+  color: rgb(105, 180, 131);
   font-size: 1.3rem;
   display: flex;
 }
@@ -43,4 +43,16 @@
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: #c5c5c5;
   font-size: 0.85rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer {
+    padding-bottom: 1.2rem;
+  }
+
+  .footer-container {
+    margin: 0;
+    grid-template-columns: 1fr;
+  }
 }
