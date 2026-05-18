@@ -5,8 +5,8 @@
 }
 
 .services-container h2 {
-  font-size: 2.2rem;
-  color: #2C3E50;
+  font-size: 2.4rem;
+  color: #26394d;
   margin-bottom: 2.5rem;
 }
 
@@ -14,19 +14,20 @@
 .filters {
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
   margin-bottom: 3rem;
   flex-wrap: wrap;
 }
 
 .filter-btn {
-  padding: 0.5rem 1.2rem;
+  padding: 0.5rem 1rem;
   border: 2px solid #6B8E7B;
-  background: white;
+  background: #f6fdf9;
   color: #6B8E7B;
   border-radius: 25px;
   cursor: pointer;
   font-size: 0.95rem;
+  font-weight: 550;
   transition: all 0.3s;
 }
 
@@ -46,7 +47,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  max-width: 1350px;
+  max-width: 1425px;
   margin: 0 auto;
 }
 
@@ -54,13 +55,13 @@
   background: white;
   border: 2px solid #6B8E7B;
   color: #6B8E7B;
-  width: 45px;
-  height: 45px;
+  width: 52px;
+  height: 47px;
   border-radius: 50%;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: all 0.3s;
-  flex-shrink: 0;
+  justify-content: center;
 }
 
 .slider-btn:hover:not(:disabled) {
@@ -83,19 +84,23 @@
 
 .service-card {
   background: white;
-  border-radius: 15px;
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.35s ease-out;
+  display: flex;
+  height: 450px;
+  flex-direction: column;
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
 }
 
 .card-image {
   height: 200px;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .card-image img {
@@ -106,47 +111,48 @@
 
 .card-info {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
   text-align: left;
+  flex: 1;
 }
 
 .card-tag {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #6B8E7B;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 650;
 }
 
 .card-info h3 {
-  color: #2C3E50;
+  color: #1f374e;
   margin: 0.5rem 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .card-info p {
-  color: #666;
+  color: #535353;
   font-size: 0.9rem;
   line-height: 1.4;
-  margin-bottom: 1rem;
+  flex: 1;
 }
 
 .card-details {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #666;
 }
 
 .card-price {
   font-weight: 700;
   color: #6B8E7B;
-  font-size: 1.2rem;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .services-container {
-    padding: 3rem 1rem;
+    padding: 2.5rem 0.5rem;
   }
 
   .services-container h2 {
@@ -165,8 +171,7 @@
 
   .cards-container {
     grid-template-columns: 1fr;
-    max-width: 320px;
-    margin: 0 auto;
+    max-width: 300px;
   }
 
   .service-card {
@@ -174,28 +179,24 @@
   }
 
   .service-card:first-child {
-    display: block;
+    display: flex;
   }
 
   .slider-btn {
     width: 38px;
     height: 38px;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .card-image {
     height: 180px;
   }
 
-  .card-info {
-    padding: 1.2rem;
-  }
-
   .card-info h3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .card-info p {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 }
