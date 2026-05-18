@@ -3,24 +3,23 @@ import services from '../../Data/Services'
 import '../../Assets/Styles/ServicesSlider.css'
 
 function ServicesSlider() {
-  const [activeTag, setActiveTag] = useState('all')
+  const [activeTag, setActiveTag] = useState('todos')
   const [start, setStart] = useState(0)
 
-  // Filter
-  const filteredServices = activeTag === 'all'
-  ? services
-  : services.filter(s => s.tag === activeTag)
-
-  const cardsPerView = window.innerWidth <= 768 ? 1 : 4
-  const visibleServices = filteredServices.slice(start, start + cardsPerView)
-
   const tags = [
-    { id: 'all', name: 'Todos' },
+    { id: 'todos', name: 'Todos' },
     { id: 'limpieza', name: 'Limpiezas' },
     { id: 'masaje', name: 'Masajes' },
     { id: 'tratamiento', name: 'Tratamientos' },
     { id: 'depilacion', name: 'Depilación' },
   ]
+  
+  const filteredServices = activeTag === 'todos'
+  ? services
+  : services.filter(s => s.tag === activeTag)
+
+  const cardsPerView = window.innerWidth <= 768 ? 1 : 4
+  const visibleServices = filteredServices.slice(start, start + cardsPerView)
 
   const next = () => {
     if (start + cardsPerView < filteredServices.length) {
