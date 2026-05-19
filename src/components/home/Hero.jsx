@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { URLS, MESSAGES } from '../../Data/Config'
 import circularLogo from '../../Assets/Images/CircularLogo.png'
 import '../../Assets/Styles/Hero.css'
 
@@ -35,7 +36,14 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
         >
-          <Link to="/booking" className='hero-btn'>Reservar</Link>
+          <Link
+            to={URLS.whatsapp(MESSAGES.reservation)}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='hero-btn'
+          >
+            Reservar
+          </Link>
         </motion.div> 
       </div>
     </section>

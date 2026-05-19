@@ -4,8 +4,7 @@ import Navbar from './Components/Common/Navbar'
 import Footer from './Components/Common/Footer'
 import Home from './Pages/Home'
 import Services from './Pages/Services'
-import Contact from './Pages/Contact'
-import Booking from './Pages/Booking'
+import WhatsappButton from './Components/Common/WhatsappButton'
 
 function App() {
   return (
@@ -14,10 +13,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/booking" element={<Booking />} />
       </Routes>
       <Footer />
+      <WhatsappButton />
     </BrowserRouter>
   )
 }

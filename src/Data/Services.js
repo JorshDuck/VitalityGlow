@@ -4,7 +4,7 @@ const servicios = [
     name: "Limpieza Facial Básica",
     tag: "limpieza",
     duration: "30 min",
-    price: "30",
+    price: "30 Bs.",
     image: "LimpiezaFacialBasica.jpg",
     description: "Descripción de Limpieza Facial Básica"
   },
@@ -13,7 +13,7 @@ const servicios = [
     name: "Limpieza Facial Profunda",
     tag: "limpieza",
     duration: "30 min",
-    price: "30",
+    price: "30 Bs.",
     image: "limpiezaFacialProfunda.jpg",
     description: "Descripción de Limpieza Facial Profunda"
   },
@@ -22,7 +22,7 @@ const servicios = [
     name: "Limpieza Profunda de Espalda",
     tag: "limpieza",
     duration: "30 min",
-    price: "30",
+    price: "30 Bs.",
     image: "limpiezaProfundaEspalda.jpg",
     description: "Descripción de Limpieza Profunda de Espalda"
   },
@@ -31,7 +31,7 @@ const servicios = [
     name: "Masaje Relajante",
     tag: "masaje",
     duration: "30 min",
-    price: "30",
+    price: "30 Bs.",
     image: "MasajeRelajante.jpg",
     description: "Descripción de Masaje Relajante"
   },
@@ -40,7 +40,7 @@ const servicios = [
     name: "Masaje Descontracturante",
     tag: "masaje",
     duration: "30 min",
-    price: "30",
+    price: "30 Bs.",
     image: "MasajeDescontracturante.jpg",
     description: "Descripción de Masaje Descontracturante"
   },
@@ -49,7 +49,7 @@ const servicios = [
     name: "Drenaje Linfático",
     tag: "masaje",
     duration: "30 min",
-    price: "30",
+    price: "30 Bs.",
     image: "DrenajeLinfatico.jpg",
     description: "Descripción de Drenaje Linfático"
   },
@@ -58,7 +58,7 @@ const servicios = [
     name: "Drenaje Brasileño",
     tag: "masaje",
     duration: "30 min",
-    price: "30",
+    price: "30 Bs.",
     image: "DrenajeBrasileño.jpg",
     description: "Descripción de Drenaje Brasileño"
   },
@@ -67,7 +67,7 @@ const servicios = [
     name: "Maderoterapia",
     tag: "masaje",
     duration: "30 min",
-    price: "30",
+    price: "30 Bs.",
     image: "Maderoterapia.jpg",
     description: "Descripción de Maderoterapia"
   },
@@ -76,7 +76,7 @@ const servicios = [
     name: "Baño de Luna",
     tag: "tratamiento",
     duration: "30 min",
-    price: "30",
+    price: "30 Bs.",
     image: "BañoLuna.jpg",
     description: "Descripción de Baño de Luna"
   },
@@ -85,7 +85,7 @@ const servicios = [
     name: "Chocoterapia",
     tag: "tratamiento",
     duration: "30 min",
-    price: "30",
+    price: "30 Bs.",
     image: "Chocoterapia.jpg",
     description: "Descripción de Chocoterapia"
   },
@@ -94,7 +94,7 @@ const servicios = [
     name: "Cafeterapia",
     tag: "tratamiento",
     duration: "30 min",
-    price: "30",
+    price: "30 Bs.",
     image: "Cafeterapia.jpg",
     description: "Descripción de Cafeterapia"
   },
@@ -103,7 +103,7 @@ const servicios = [
     name: "Fangoterapia",
     tag: "tratamiento",
     duration: "30 min",
-    price: "30",
+    price: "30 Bs.",
     image: "Fangoterapia.jpg",
     description: "Descripción de Fangoterapia"
   },
@@ -112,7 +112,7 @@ const servicios = [
     name: "Vendas Frías",
     tag: "tratamiento",
     duration: "30 min",
-    price: "30",
+    price: "30 Bs.",
     image: "VendasFrias.jpg",
     description: "Descripción de Vendas Frías"
   },
@@ -121,7 +121,7 @@ const servicios = [
     name: "Masaje Capilar con Botox",
     tag: "tratamiento",
     duration: "30 min",
-    price: "30",
+    price: "30 Bs.",
     image: "MasajeCapilarBotox.jpg",
     description: "Descripción de Masaje Capilar con Botox"
   },
@@ -130,7 +130,7 @@ const servicios = [
     name: "Depilación con cera",
     tag: "depilacion",
     duration: "30 min",
-    price: "30",
+    price: "30 Bs.",
     image: "DepilacionCera.jpg",
     description: "Descripción de Depilación con cera"
   },

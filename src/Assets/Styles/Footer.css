@@ -24,10 +24,19 @@
   display: flex;
 }
 
+.footer-column p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .footer-column a {
+  display: flex;
+  align-items: center;
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s;
+  gap: 0.5rem;
 }
 
 .footer-column a:hover {
@@ -42,7 +51,7 @@
   margin-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: #c5c5c5;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 /* RESPONSIVE */

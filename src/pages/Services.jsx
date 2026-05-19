@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import { URLS, MESSAGES } from '../Data/Config'
 import services from '../Data/Services'
 import '../Assets/Styles/Services.css'
 
@@ -92,10 +93,17 @@ function Services() {
                   ⏱ {service.duration}
                 </span>
                 <span className='service-page-price'>
-                  {service.price} Bs
+                  {service.price}
                 </span>
               </div>
-              <Link to='/booking' className='service-page-btn'>Reservar</Link>
+              <Link
+                to={URLS.whatsapp(MESSAGES.reservation)}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='service-page-btn'
+              >
+                Reservar
+              </Link>
             </div>
           </motion.div>
         ))}

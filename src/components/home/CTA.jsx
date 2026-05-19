@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import { URLS, MESSAGES } from '../../Data/Config'
 import '../../Assets/Styles/CTA.css'
 
 function CTA () {
@@ -26,10 +27,16 @@ function CTA () {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}  
       >
-        <Link to="/reservar" className="cta-btn">Reserva tu sesión ahora</Link>
+        <Link
+          to={URLS.whatsapp(MESSAGES.reservation)}
+          target='_blank'
+          rel='noopener noreferrer'
+          className="cta-btn"
+        >
+          Reserva tu sesión ahora
+        </Link>
       </motion.div>
     </section>
   )

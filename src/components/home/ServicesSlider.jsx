@@ -77,7 +77,7 @@ function ServicesSlider() {
                 <p>{service.description}</p>
                 <div className='card-details'>
                   <span>⏱ {service.duration}</span>
-                  <span className='card-price'>{service.price}Bs.</span>
+                  <span className='card-price'>{service.price}</span>
                 </div>
               </div>
             </div>

@@ -1,5 +1,6 @@
 import { useRef, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { URLS, MESSAGES } from '../../Data/Config'
 import logo from '../../Assets/Images/Logo.png'
 import logoLetters from '../../Assets/Images/LogoLetters.png'
 import '../../Assets/Styles/Navbar.css'
@@ -53,9 +54,17 @@ function Navbar() {
         <div
           ref={menuRef}
           className={`nav-menu ${isOpen ? 'active' : ''}`}>
-          <Link to="/services" className='nav-link' onClick={closeMenu}>Servicios</Link>
-          <Link to="/contact" className='nav-link' onClick={closeMenu}>Contactános</Link>
-          <Link to="/booking" className='nav-link' onClick={closeMenu}>Reservar</Link>
+            <Link to="/" className='nav-link' onClick={closeMenu}>Inicio</Link>
+            <Link to="/services" className='nav-link' onClick={closeMenu}>Servicios</Link>
+            <Link
+              to={URLS.whatsapp(MESSAGES.reservation)}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='nav-link'
+              onClick={closeMenu}
+            >
+              Reservar
+            </Link>
         </div>
       </div>
     </nav>

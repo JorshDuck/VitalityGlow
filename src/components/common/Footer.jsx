@@ -1,37 +1,54 @@
 import { Link } from 'react-router-dom'
+import { PiMapPinBold, PiPhoneBold, PiClockBold } from 'react-icons/pi'
+import { SiWhatsapp } from 'react-icons/si'
+import { CONFIG, URLS, MESSAGES } from '../../Data/Config'
 import '../../Assets/Styles/Footer.css'
+
 
 function Footer () {
   return (
     <footer className='footer'>
       <div className='footer-container'>
-        {/* Column 1 */}
+        {/* Column 1 - Logo */}
         <div className='footer-column'>
           <h3>Vitality & Glow</h3>
           <p>Cada terapia es un ritual que transforma el estrés en bienestar, libera tension y recupera la armonía que el estrés quita diariamente. Amarte es el primer paso para brillar.</p>
           <p>Porque cuidarte no es un lujo, es tu prioridad.</p>
         </div>
-        {/* Column 2 */}
+        {/* Column 2 - Links */}
         <div className='footer-column'>
           <h3>Enlaces</h3>
-          <Link>Inicio</Link>
-          <Link>Servicios</Link>
-          <Link>Contáctanos</Link>
-          <Link>Reservar</Link>
+          <Link to='/'>Inicio</Link>
+          <Link to='/Services'>Servicios</Link>
+          <Link
+            to={URLS.whatsapp(MESSAGES.reservation)}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Reservar
+          </Link>
         </div>
-        {/* Column 3 */}
+        {/* Column 3 - Contact */}
         <div className='footer-column'>
           <h3>Contáctanos</h3>
-          <p>Calle Huanchaca #</p>
-          <p>(+591) 74946021</p>
-          <p>Whatsapp</p>
+          <a
+            href={URLS.maps}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <PiMapPinBold /> {CONFIG.address}
+          </a>
+          <a
+            href={URLS.whatsapp(MESSAGES.reservation)}
+            target='_blank'
+            rel='noopener noreferrer'
+          ><SiWhatsapp/>7494-6021</a>
         </div>
-        {/* Column 4 */}
+        {/* Column 4 - Schedule */}
         <div className='footer-column'>
           <h3>Horario</h3>
-          <p>Lunes a Viernes: 08:00 - 20:00</p>
-          <p>Sábados: 10:00 - 15:00</p>
-          <p>Domingos: Cerrado</p>
+          <p>De Lunes a Domingo</p>
+          <p><PiClockBold />  13:00 - 22:00</p>
         </div>
       </div>
       {/* Bottom Line */}
