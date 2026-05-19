@@ -20,15 +20,20 @@ function Services() {
   : services.filter(s => s.tag === activeTag)
 
   const fadeIn = {
-    hidden: { opacity: 0, y: 200 },
+    hidden: { opacity: 0, y: 100 },
     visible: { opacity: 1, y: 0 }
+  }
+
+  const staggerContainer = {
+    hidden: {},
+    visible: { transition: { staggerChildren: 0.1 } }
   }
 
   return (
     <div className='services-page'>
       <section className='header'>
         <motion.h1
-          initial={{ opacity: 0, y: -30 }}
+          initial={{ opacity: 0, y: -15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
@@ -45,7 +50,7 @@ function Services() {
 
       {/* Filters */}
       <motion.div 
-        className="filters"
+        className='filters'
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.4 }}
@@ -62,30 +67,35 @@ function Services() {
       </motion.div>
 
       {/* Services */}
-      <motion.div className='services-container'>
+      <motion.div
+        className='services-page-container'
+        variants={staggerContainer}
+        initial='hidden'
+        animate='visible'
+      >
         {filteredServices.map(service => (
           <motion.div
             key={service.id}
-            className="service-card"
+            className='service-page-card'
             variants={fadeIn}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
           >
-            <div className="service-image">
+            <div className='service-page-image'>
               <img src={`/src/Assets/Images/${service.image}`} alt={service.nombre} />
-              <span className="service-tag-badge">{service.tag}</span>
+              <span className='service-page-badge'>{service.tag}</span>
             </div>
-            <div className='service-info'>
+            <div className='service-page-info'>
               <h3>{service.name}</h3>
               <p>{service.description}</p>
-              <div className='service-details'>
-                <span className='service-duration'>
+              <div className='service-page-details'>
+                <span className='service-page-duration'>
                   ⏱ {service.duration}
                 </span>
-                <span className='service-price'>
+                <span className='service-page-price'>
                   {service.price} Bs
                 </span>
               </div>
-              <Link to="/booking" className='service-btn'>Reservar</Link>
+              <Link to='/booking' className='service-page-btn'>Reservar</Link>
             </div>
           </motion.div>
         ))}
