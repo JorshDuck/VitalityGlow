@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { PiMapPinBold, PiPhoneBold, PiClockBold } from 'react-icons/pi'
 import { SiWhatsapp } from 'react-icons/si'
 import { CONFIG, URLS, MESSAGES } from '../../Data/Config'
@@ -6,6 +6,15 @@ import '../../Assets/Styles/Footer.css'
 
 
 function Footer () {
+  const location = useLocation()
+
+  const scrollToTop = (e, path) => {
+    if (location.pathname === path) {
+      e.preventDefault()
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
+
   return (
     <footer className='footer'>
       <div className='footer-container'>
@@ -18,7 +27,7 @@ function Footer () {
         {/* Column 2 - Links */}
         <div className='footer-column'>
           <h3>Enlaces</h3>
-          <Link to='/'>Inicio</Link>
+          <Link to='/' onClick={(e) => {scrollToTop(e, '/')}} >Inicio</Link>
           <Link to='/Services'>Servicios</Link>
           <Link
             to={URLS.whatsapp(MESSAGES.reservation)}

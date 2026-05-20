@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { URLS, MESSAGES } from '../../Data/Config'
 import logo from '../../Assets/Images/Logo.png'
 import logoLetters from '../../Assets/Images/LogoLetters.png'
@@ -9,8 +9,13 @@ function Navbar() {
   const [isOpen, setIsOpen ] = useState(false)
   const menuButtonRef = useRef(null)
   const menuRef = useRef(null)
+  const location = useLocation()
 
   const closeMenu = () => setIsOpen(false)
+
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [location.pathname])
 
   useEffect(() => {
     function handleClickOutside(event) {
@@ -30,11 +35,20 @@ function Navbar() {
     }
   }, [isOpen])
 
+   const scrollToTop = (e, path) => {
+    closeMenu()
+
+    if (location.pathname === path) {
+      e.preventDefault()
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
+
   return (
     <nav className='navbar'>
       <div className='navbar-container'>
         {/* Left Side */}
-        <Link to="/" className='navbar-logo' onClick={closeMenu}>
+        <Link to="/" className='navbar-logo' onClick={(e) => {scrollToTop(e, '/')}}>
         <img src={logo} alt='Vitality Glow Icon' className='logo-icon' ></img>
         <img src={logoLetters} alt='Vitality Glow Letters' className='logo-letters' ></img>
         </Link>
@@ -54,8 +68,8 @@ function Navbar() {
         <div
           ref={menuRef}
           className={`nav-menu ${isOpen ? 'active' : ''}`}>
-            <Link to="/" className='nav-link' onClick={closeMenu}>Inicio</Link>
-            <Link to="/services" className='nav-link' onClick={closeMenu}>Servicios</Link>
+            <Link to="/" className='nav-link' onClick={(e) => {scrollToTop(e, '/')}}>Inicio</Link>
+            <Link to="/services" className='nav-link' onClick={(e) => {scrollToTop(e, '/services')}}>Servicios</Link>
             <Link
               to={URLS.whatsapp(MESSAGES.reservation)}
               target='_blank'

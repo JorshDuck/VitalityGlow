@@ -12,7 +12,7 @@ function WhyUs () {
             <PiFlowerLotusBold className='why-us-icon' />
           </div>
           <h3>Ambiente Relajante</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, tenetur.</p>
+          <p>Envuelvete en una atmósfera de calma. Aromas naturales y un espacio diseñado para que tu única preocupación sea relajarte.</p>
         </div>
 
         <div className='why-us-card golden'>
@@ -20,7 +20,7 @@ function WhyUs () {
             <PiStarFourFill className="why-us-icon" />
           </div>
           <h3>Atención Personalizada</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, voluptates!</p>
+          <p>Cada cuerpo es único. Por eso escuchamos tus necesidades y adaptamos cada sesión para ofrecerte exactamente lo que estás buscando.</p>
         </div>
 
         <div className='why-us-card red'>
@@ -28,7 +28,7 @@ function WhyUs () {
             <PiHouseBold className="why-us-icon" />
           </div>
           <h3>Servicio a Domicilio</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, excepturi?</p>
+          <p>¿Prefieres no salir de casa? Disfruta de una sesión completa con productos profesionales en tu propio espacio.</p>
         </div>
 
       </div>

@@ -1,6 +1,6 @@
 .services-container {
-  padding: 5rem 2rem;
-  background: #f9f8f4;
+  padding: 2.5rem 2rem 4.5rem;
+  background: var(--bg-color);
   text-align: center;
 }
 
