@@ -14,7 +14,7 @@ const servicios = [
     tag: "limpieza",
     duration: "1 Hora",
     price: "70 Bs.",
-    image: "limpiezaFacialProfunda.jpg",
+    image: "LimpiezaFacialProfunda.jpg",
     description: "Tratamiento facial completo con exfoliación y vapor, para extraer puntos negros y eliminar celulas muertas. Combate el acné y cierra poros."
   },
   {
@@ -23,7 +23,7 @@ const servicios = [
     tag: "limpieza",
     duration: "1 Hora",
     price: "70 Bs.",
-    image: "limpiezaProfundaEspalda.jpg",
+    image: "LimpiezaProfundaEspalda.jpg",
     description: "Exfoliación y extracción de impurezas y celulas muertas en la espalda. Perfecta para eliminar acné, mejorar la textura de la piel, lucir una espalda suave y limpia."
   },
   {

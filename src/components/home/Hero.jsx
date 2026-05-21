@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { URLS, MESSAGES } from '../../data/Config'
-import circularLogo from '../../assets/images/CircularLogo.png'
+import circularLogo from '/public/images/CircularLogo.png'
 import '../../assets/styles/Hero.css'
 
 function Hero() {
