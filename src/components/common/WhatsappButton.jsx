@@ -2,7 +2,7 @@ import { SiWhatsapp } from 'react-icons/si'
 import { URLS, MESSAGES } from '../../data/Config'
 import '../../Assets/Styles/WhatsAppButton.css'
 
-function WhatsappButton() {
+function WhatsAppButton() {
   return (
     <a
       className='whatsapp-btn'
@@ -15,4 +15,4 @@ function WhatsappButton() {
   )
 }
 
-export default WhatsappButton
+export default WhatsAppButton
