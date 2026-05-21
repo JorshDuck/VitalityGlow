@@ -1,5 +1,5 @@
 import { use, useState } from 'react'
-import services from '../../data/services'
+import services from '../../data/Services'
 import '../../assets/Styles/ServicesSlider.css'
 
 function ServicesSlider() {

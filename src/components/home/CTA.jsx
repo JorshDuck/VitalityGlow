@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { URLS, MESSAGES } from '../../data/config'
+import { URLS, MESSAGES } from '../../data/Config'
 import '../../assets/Styles/CTA.css'
 
 function CTA () {

@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { URLS, MESSAGES } from '../../data/config'
+import { URLS, MESSAGES } from '../../data/Config'
 import logo from '../../assets/Images/Logo.png'
 import logoLetters from '../../assets/Images/LogoLetters.png'
 import '../../assets/Styles/Navbar.css'
