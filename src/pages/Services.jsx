@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { URLS, MESSAGES } from '../data/Config'
-import services from '../data/Services'
-import '../Assets/Styles/Services.css'
+import { URLS, MESSAGES } from '../data/config'
+import services from '../data/services'
+import '../assets/Styles/Services.css'
 
 function Services() {
   const [activeTag, setActiveTag] = useState('todos')
