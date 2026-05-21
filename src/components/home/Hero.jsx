@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { URLS, MESSAGES } from '../../Data/Config'
+import { URLS, MESSAGES } from '../../data/Config'
 import circularLogo from '../../Assets/Images/CircularLogo.png'
 import '../../Assets/Styles/Hero.css'
 

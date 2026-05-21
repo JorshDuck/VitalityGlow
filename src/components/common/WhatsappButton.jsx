@@ -1,5 +1,5 @@
 import { SiWhatsapp } from 'react-icons/si'
-import { URLS, MESSAGES } from '../../Data/Config'
+import { URLS, MESSAGES } from '../../data/Config'
 import '../../Assets/Styles/WhatsAppButton.css'
 
 function WhatsappButton() {
