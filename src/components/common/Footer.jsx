@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { PiMapPinBold, PiPhoneBold, PiClockBold } from 'react-icons/pi'
 import { SiWhatsapp } from 'react-icons/si'
 import { CONFIG, URLS, MESSAGES } from '../../data/Config'
-import '../../assets/Styles/Footer.css'
+import '../../assets/styles/Footer.css'
 
 
 function Footer () {

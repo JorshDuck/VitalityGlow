@@ -1,5 +1,5 @@
 import { PiFlowerLotusBold, PiStarFourFill, PiHouseBold } from 'react-icons/pi'
-import '../../assets/Styles/WhyUs.css'
+import '../../assets/styles/WhyUs.css'
 
 function WhyUs () {
   return(

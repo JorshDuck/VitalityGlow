@@ -1,6 +1,6 @@
 import { use, useState } from 'react'
 import services from '../../data/Services'
-import '../../assets/Styles/ServicesSlider.css'
+import '../../assets/styles/ServicesSlider.css'
 
 function ServicesSlider() {
   const [activeTag, setActiveTag] = useState('todos')

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { URLS, MESSAGES } from '../data/Config'
 import services from '../data/Services'
-import '../assets/Styles/Services.css'
+import '../assets/styles/Services.css'
 
 function Services() {
   const [activeTag, setActiveTag] = useState('todos')
