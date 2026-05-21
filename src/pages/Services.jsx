@@ -82,7 +82,7 @@ function Services() {
             transition={{ duration: 0.3 }}
           >
             <div className='service-page-image'>
-              <img src={`/src/Assets/Images/${service.image}`} alt={service.nombre} />
+              <img src={`/images/${service.image}`} alt={service.nombre} />
               <span className='service-page-badge'>{service.tag}</span>
             </div>
             <div className='service-page-info'>

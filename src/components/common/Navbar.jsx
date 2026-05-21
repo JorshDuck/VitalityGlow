@@ -1,8 +1,8 @@
 import { useRef, useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { URLS, MESSAGES } from '../../data/Config'
-import logo from '../../assets/images/Logo.png'
-import logoLetters from '../../assets/images/LogoLetters.png'
+import logo from '/public/images/Logo.png'
+import logoLetters from '/public/images/LogoLetters.png'
 import '../../assets/styles/Navbar.css'
 
 function Navbar() {

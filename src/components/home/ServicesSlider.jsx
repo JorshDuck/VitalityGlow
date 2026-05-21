@@ -69,7 +69,7 @@ function ServicesSlider() {
           {visibleServices.map(service => (
             <div key={service.id} className='service-card'>
               <div className='card-image'>
-                <img src={`/src/Assets/Images/${service.image}`} alt={service.name} />
+                <img src={`/images/${service.image}`} alt={service.name} />
               </div>
               <div className='card-info'>
                 <span className='card-tag'>{service.tag}</span>
