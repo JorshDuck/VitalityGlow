@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import Navbar from './Components/Common/Navbar'
-import Footer from './Components/Common/Footer'
+import Navbar from './components/common/Navbar'
+import Footer from './components/common/Footer'
 import Home from './Pages/Home'
 import Services from './Pages/Services'
-import WhatsappButton from './Components/Common/WhatsappButton'
+import WhatsAppButton from './components/common/WhatsAppButton'
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route path="/services" element={<Services />} />
       </Routes>
       <Footer />
-      <WhatsappButton />
+      <WhatsAppButton />
     </BrowserRouter>
   )
 }

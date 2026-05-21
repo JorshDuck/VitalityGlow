@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
-import Hero from '../Components/Home/Hero'
-import ServicesSlider from '../Components/Home/ServicesSlider'
-import WhyUs from '../Components/Home/WhyUs'
-import CTA from '../Components/Home/CTA'
+import Hero from '../components/Home/Hero'
+import ServicesSlider from '../components/Home/ServicesSlider'
+import WhyUs from '../components/Home/WhyUs'
+import CTA from '../components/Home/CTA'
 
 function Home() {
   const fadeIn = {
