@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/next';
 import './App.css'
 import Navbar from './components/common/Navbar'
 import Footer from './components/common/Footer'
@@ -17,6 +18,7 @@ function App() {
       </Routes>
       <Footer />
       <WhatsAppButton />
+      <Analytics />
     </BrowserRouter>
   )
 }
