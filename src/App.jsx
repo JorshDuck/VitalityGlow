@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from '@vercel/analytics/react';
 import './App.css'
 import Navbar from './components/common/Navbar'
 import Footer from './components/common/Footer'
